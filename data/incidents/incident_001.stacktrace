@@ -1,0 +1,10 @@
+Traceback (most recent call last):
+  File "services/payment_service.py", line 142, in process_payment
+    connection = database_pool.acquire()
+  File "database/connection_pool.py", line 87, in acquire
+    raise ConnectionPoolExhaustedError("No available database connections")
+ConnectionPoolExhaustedError: No available database connections
+
+Service: PaymentService
+Operation: process_payment
+Order ID: ORD-1001

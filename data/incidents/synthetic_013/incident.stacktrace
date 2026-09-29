@@ -1,0 +1,11 @@
+Traceback (most recent call last):
+  File "services/gatewayservice.py", line 146, in request_token
+    result = dependency_client.execute()
+  File "clients/identity_client.py", line 151, in request_token
+    raise AuthenticationError("Invalid credentials")
+AuthenticationError: Invalid credentials
+
+Service: GatewayService
+Operation: authenticate
+User ID: USER-9785
+Request ID: REQ-26361

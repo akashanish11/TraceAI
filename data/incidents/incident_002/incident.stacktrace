@@ -1,0 +1,13 @@
+Traceback (most recent call last):
+  File "services/order_service.py", line 118, in create_order
+    inventory = inventory_client.get_inventory(order_id)
+  File "clients/inventory_client.py", line 64, in get_inventory
+    response = http_client.request()
+  File "clients/http_client.py", line 91, in request
+    raise RequestTimeoutError("Request timeout after 3000ms")
+RequestTimeoutError: Request timeout after 3000ms
+
+Service: OrderService
+Operation: create_order
+Order ID: ORD-2048
+Dependency: InventoryService

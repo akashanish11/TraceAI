@@ -1,0 +1,11 @@
+Traceback (most recent call last):
+  File "services/gatewayservice.py", line 185, in load
+    result = dependency_client.execute()
+  File "config/application_config.py", line 190, in load
+    raise ConfigurationError("Required configuration value is missing")
+ConfigurationError: Required configuration value is missing
+
+Service: GatewayService
+Operation: initialize
+User ID: USER-3705
+Request ID: REQ-44741

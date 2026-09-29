@@ -1,0 +1,11 @@
+Traceback (most recent call last):
+  File "services/authservice.py", line 141, in request_token
+    result = dependency_client.execute()
+  File "clients/identity_client.py", line 146, in request_token
+    raise AuthenticationError("Invalid credentials")
+AuthenticationError: Invalid credentials
+
+Service: AuthService
+Operation: authenticate
+User ID: USER-7224
+Request ID: REQ-22676

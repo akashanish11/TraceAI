@@ -1,0 +1,11 @@
+Traceback (most recent call last):
+  File "services/billingservice.py", line 56, in acquire
+    result = dependency_client.execute()
+  File "database/connection_pool.py", line 61, in acquire
+    raise ConnectionPoolExhaustedError("No available database connections")
+ConnectionPoolExhaustedError: No available database connections
+
+Service: BillingService
+Operation: process_request
+User ID: USER-9279
+Request ID: REQ-88907

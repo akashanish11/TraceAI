@@ -1,0 +1,11 @@
+Traceback (most recent call last):
+  File "services/backupservice.py", line 114, in write
+    result = dependency_client.execute()
+  File "storage/file_writer.py", line 119, in write
+    raise StorageFullError("No space left on device")
+StorageFullError: No space left on device
+
+Service: BackupService
+Operation: write_file
+User ID: USER-8668
+Request ID: REQ-79352

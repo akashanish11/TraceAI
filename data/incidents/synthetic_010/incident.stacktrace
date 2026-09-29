@@ -1,0 +1,11 @@
+Traceback (most recent call last):
+  File "services/inventoryservice.py", line 76, in request
+    result = dependency_client.execute()
+  File "clients/http_client.py", line 81, in request
+    raise RequestTimeoutError("Request timeout after 3000ms")
+RequestTimeoutError: Request timeout after 3000ms
+
+Service: InventoryService
+Operation: call_dependency
+User ID: USER-4527
+Request ID: REQ-54118

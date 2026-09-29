@@ -1,0 +1,8 @@
+Exception in thread "main" java.lang.OutOfMemoryError: Java heap space
+    at com.example.reportingservice.buildMatrix(FeatureBuilder.java:140)
+    at com.example.reportingservice.ReportingServiceService.java:180
+
+Service: ReportingService
+Operation: generate
+User ID: USER-3664
+Request ID: REQ-58520

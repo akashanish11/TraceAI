@@ -1,0 +1,11 @@
+Traceback (most recent call last):
+  File "services/subscriptionservice.py", line 158, in acquire
+    result = dependency_client.execute()
+  File "database/connection_pool.py", line 163, in acquire
+    raise ConnectionPoolExhaustedError("No available database connections")
+ConnectionPoolExhaustedError: No available database connections
+
+Service: SubscriptionService
+Operation: process_request
+User ID: USER-2424
+Request ID: REQ-87397

@@ -1,0 +1,53 @@
+[
+  {
+    "incident_id": "legacy_incident",
+    "query": "What caused the payment service database failure?",
+    "ground_truth_root_cause": "Connection pool exhaustion",
+    "relevant_evidence": [
+      "incident_001.log:line 4",
+      "incident_001.log:line 5",
+      "incident_001.stacktrace:exception",
+      "incident_001.stacktrace:database/connection_pool.py:87"
+    ]
+  },
+  {
+    "incident_id": "incident_002",
+    "query": "What caused the order service failure?",
+    "ground_truth_root_cause": "API request timeout",
+    "relevant_evidence": [
+      "incident.log:line 4",
+      "incident.stacktrace:exception",
+      "incident.stacktrace:clients/http_client.py:91"
+    ]
+  },
+  {
+    "incident_id": "incident_003",
+    "query": "What caused the authentication failure?",
+    "ground_truth_root_cause": "Authentication failure",
+    "relevant_evidence": [
+      "incident.log:line 3",
+      "incident.stacktrace:exception",
+      "incident.stacktrace:clients/identity_client.py:51"
+    ]
+  },
+  {
+    "incident_id": "incident_004",
+    "query": "What caused the recommendation service failure?",
+    "ground_truth_root_cause": "Memory exhaustion",
+    "relevant_evidence": [
+      "incident.log:line 6",
+      "incident.stacktrace:exception",
+      "incident.stacktrace:com.example.recommendation/FeatureBuilder.java:214"
+    ]
+  },
+  {
+    "incident_id": "incident_005",
+    "query": "What caused the user profile failure?",
+    "ground_truth_root_cause": "Null pointer failure",
+    "relevant_evidence": [
+      "incident.log:line 4",
+      "incident.stacktrace:exception",
+      "incident.stacktrace:com.example.user/ProfileProcessor.java:87"
+    ]
+  }
+]

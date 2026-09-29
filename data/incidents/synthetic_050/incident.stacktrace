@@ -1,0 +1,11 @@
+Traceback (most recent call last):
+  File "services/orderservice.py", line 221, in load
+    result = dependency_client.execute()
+  File "config/application_config.py", line 226, in load
+    raise ConfigurationError("Required configuration value is missing")
+ConfigurationError: Required configuration value is missing
+
+Service: OrderService
+Operation: initialize
+User ID: USER-6107
+Request ID: REQ-62296

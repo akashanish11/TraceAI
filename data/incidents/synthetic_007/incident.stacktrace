@@ -1,0 +1,11 @@
+Traceback (most recent call last):
+  File "services/catalogservice.py", line 164, in request
+    result = dependency_client.execute()
+  File "clients/http_client.py", line 169, in request
+    raise RequestTimeoutError("Request timeout after 3000ms")
+RequestTimeoutError: Request timeout after 3000ms
+
+Service: CatalogService
+Operation: call_dependency
+User ID: USER-7873
+Request ID: REQ-38893

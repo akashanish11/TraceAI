@@ -1,0 +1,11 @@
+Traceback (most recent call last):
+  File "services/mediaservice.py", line 78, in write
+    result = dependency_client.execute()
+  File "storage/file_writer.py", line 83, in write
+    raise StorageFullError("No space left on device")
+StorageFullError: No space left on device
+
+Service: MediaService
+Operation: write_file
+User ID: USER-2489
+Request ID: REQ-16175

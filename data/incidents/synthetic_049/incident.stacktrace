@@ -1,0 +1,11 @@
+Traceback (most recent call last):
+  File "services/notificationservice.py", line 188, in load
+    result = dependency_client.execute()
+  File "config/application_config.py", line 193, in load
+    raise ConfigurationError("Required configuration value is missing")
+ConfigurationError: Required configuration value is missing
+
+Service: NotificationService
+Operation: initialize
+User ID: USER-7932
+Request ID: REQ-37760

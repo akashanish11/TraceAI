@@ -1,0 +1,11 @@
+Traceback (most recent call last):
+  File "services/recommendationservice.py", line 161, in get
+    result = dependency_client.execute()
+  File "cache/redis_client.py", line 166, in get
+    raise CacheConnectionError("Unable to connect to cache server")
+CacheConnectionError: Unable to connect to cache server
+
+Service: RecommendationService
+Operation: get_cached_value
+User ID: USER-2827
+Request ID: REQ-48469

@@ -1,0 +1,12 @@
+﻿.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.git/
+.gitignore
+.vscode/
+.idea/
+*.tmp
+*.bak
+data/traceai.db
+data/.traceai_runtime/

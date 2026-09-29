@@ -1,0 +1,11 @@
+Traceback (most recent call last):
+  File "services/analyticsservice.py", line 54, in send
+    result = dependency_client.execute()
+  File "messaging/kafka_producer.py", line 59, in send
+    raise KafkaProducerError("Failed to publish message")
+KafkaProducerError: Failed to publish message
+
+Service: AnalyticsService
+Operation: publish_event
+User ID: USER-6310
+Request ID: REQ-74042

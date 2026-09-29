@@ -1,0 +1,11 @@
+Traceback (most recent call last):
+  File "services/paymentservice.py", line 50, in send
+    result = dependency_client.execute()
+  File "messaging/kafka_producer.py", line 55, in send
+    raise KafkaProducerError("Failed to publish message")
+KafkaProducerError: Failed to publish message
+
+Service: PaymentService
+Operation: publish_event
+User ID: USER-9837
+Request ID: REQ-79514

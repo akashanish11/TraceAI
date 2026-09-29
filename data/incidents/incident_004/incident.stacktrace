@@ -1,0 +1,8 @@
+Exception in thread "main" java.lang.OutOfMemoryError: Java heap space
+    at com.example.recommendation.FeatureBuilder.buildMatrix(FeatureBuilder.java:214)
+    at com.example.recommendation.RecommendationService.generate(RecommendationService.java:98)
+    at com.example.recommendation.ApiController.getRecommendations(ApiController.java:61)
+
+Service: RecommendationService
+Operation: generate
+User ID: USER-4492

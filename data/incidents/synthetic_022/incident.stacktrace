@@ -1,0 +1,8 @@
+Exception in thread "main" java.lang.NullPointerException: Cannot invoke method because object is null
+    at com.example.orderservice.processPreferences(ProfileProcessor.java:133)
+    at com.example.orderservice.OrderServiceService.java:173
+
+Service: OrderService
+Operation: process_request
+User ID: USER-4598
+Request ID: REQ-99733

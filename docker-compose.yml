@@ -1,0 +1,13 @@
+services:
+  traceai-api:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: traceai-api:test
+    container_name: traceai-api
+    ports:
+      - "8000:8000"
+    environment:
+      TRACEAI_OLLAMA_URL: "http://host.docker.internal:11434"
+    extra_hosts:
+      - "host.docker.internal:host-gateway"

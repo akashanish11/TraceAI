@@ -1,0 +1,8 @@
+Exception in thread "main" java.lang.NullPointerException: Cannot invoke method because object is null
+    at com.example.catalogservice.processPreferences(ProfileProcessor.java:104)
+    at com.example.catalogservice.CatalogServiceService.java:144
+
+Service: CatalogService
+Operation: process_request
+User ID: USER-5386
+Request ID: REQ-18675

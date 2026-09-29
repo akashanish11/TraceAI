@@ -1,0 +1,1109 @@
+{
+  "description": "Synthetic TraceAI evaluation dataset generated from deterministic incident templates.",
+  "seed": 42,
+  "total_cases": 50,
+  "categories": 10,
+  "cases_per_category": 5,
+  "cases": [
+    {
+      "incident_id": "synthetic_001",
+      "query": "What caused the PaymentService failure for request REQ-46048?",
+      "ground_truth_root_cause": "Connection pool exhaustion",
+      "relevant_evidence": [
+        "incident.log:line 4",
+        "incident.stacktrace:exception",
+        "incident.stacktrace:database/connection_pool.py:117"
+      ],
+      "metadata": {
+        "service": "PaymentService",
+        "user_id": "USER-1409",
+        "request_id": "REQ-46048",
+        "exception": "ConnectionPoolExhaustedError",
+        "exception_message": "No available database connections",
+        "log_signal": "Connection pool exhausted",
+        "operation": "process_request",
+        "file": "database/connection_pool.py",
+        "function": "acquire",
+        "line": 112
+      }
+    },
+    {
+      "incident_id": "synthetic_002",
+      "query": "What caused the BillingService failure for request REQ-23434?",
+      "ground_truth_root_cause": "Connection pool exhaustion",
+      "relevant_evidence": [
+        "incident.log:line 4",
+        "incident.stacktrace:exception",
+        "incident.stacktrace:database/connection_pool.py:228"
+      ],
+      "metadata": {
+        "service": "BillingService",
+        "user_id": "USER-3286",
+        "request_id": "REQ-23434",
+        "exception": "ConnectionPoolExhaustedError",
+        "exception_message": "No available database connections",
+        "log_signal": "Connection pool exhausted",
+        "operation": "process_request",
+        "file": "database/connection_pool.py",
+        "function": "acquire",
+        "line": 223
+      }
+    },
+    {
+      "incident_id": "synthetic_003",
+      "query": "What caused the SubscriptionService failure for request REQ-87397?",
+      "ground_truth_root_cause": "Connection pool exhaustion",
+      "relevant_evidence": [
+        "incident.log:line 4",
+        "incident.stacktrace:exception",
+        "incident.stacktrace:database/connection_pool.py:163"
+      ],
+      "metadata": {
+        "service": "SubscriptionService",
+        "user_id": "USER-2424",
+        "request_id": "REQ-87397",
+        "exception": "ConnectionPoolExhaustedError",
+        "exception_message": "No available database connections",
+        "log_signal": "Connection pool exhausted",
+        "operation": "process_request",
+        "file": "database/connection_pool.py",
+        "function": "acquire",
+        "line": 158
+      }
+    },
+    {
+      "incident_id": "synthetic_004",
+      "query": "What caused the PaymentService failure for request REQ-22280?",
+      "ground_truth_root_cause": "Connection pool exhaustion",
+      "relevant_evidence": [
+        "incident.log:line 4",
+        "incident.stacktrace:exception",
+        "incident.stacktrace:database/connection_pool.py:110"
+      ],
+      "metadata": {
+        "service": "PaymentService",
+        "user_id": "USER-1488",
+        "request_id": "REQ-22280",
+        "exception": "ConnectionPoolExhaustedError",
+        "exception_message": "No available database connections",
+        "log_signal": "Connection pool exhausted",
+        "operation": "process_request",
+        "file": "database/connection_pool.py",
+        "function": "acquire",
+        "line": 105
+      }
+    },
+    {
+      "incident_id": "synthetic_005",
+      "query": "What caused the BillingService failure for request REQ-88907?",
+      "ground_truth_root_cause": "Connection pool exhaustion",
+      "relevant_evidence": [
+        "incident.log:line 4",
+        "incident.stacktrace:exception",
+        "incident.stacktrace:database/connection_pool.py:61"
+      ],
+      "metadata": {
+        "service": "BillingService",
+        "user_id": "USER-9279",
+        "request_id": "REQ-88907",
+        "exception": "ConnectionPoolExhaustedError",
+        "exception_message": "No available database connections",
+        "log_signal": "Connection pool exhausted",
+        "operation": "process_request",
+        "file": "database/connection_pool.py",
+        "function": "acquire",
+        "line": 56
+      }
+    },
+    {
+      "incident_id": "synthetic_006",
+      "query": "What caused the CatalogService failure for request REQ-95181?",
+      "ground_truth_root_cause": "API request timeout",
+      "relevant_evidence": [
+        "incident.log:line 4",
+        "incident.stacktrace:exception",
+        "incident.stacktrace:clients/http_client.py:234"
+      ],
+      "metadata": {
+        "service": "CatalogService",
+        "user_id": "USER-4257",
+        "request_id": "REQ-95181",
+        "exception": "RequestTimeoutError",
+        "exception_message": "Request timeout after 3000ms",
+        "log_signal": "Request timeout after 3000ms",
+        "operation": "call_dependency",
+        "file": "clients/http_client.py",
+        "function": "request",
+        "line": 229
+      }
+    },
+    {
+      "incident_id": "synthetic_007",
+      "query": "What caused the CatalogService failure for request REQ-38893?",
+      "ground_truth_root_cause": "API request timeout",
+      "relevant_evidence": [
+        "incident.log:line 4",
+        "incident.stacktrace:exception",
+        "incident.stacktrace:clients/http_client.py:169"
+      ],
+      "metadata": {
+        "service": "CatalogService",
+        "user_id": "USER-7873",
+        "request_id": "REQ-38893",
+        "exception": "RequestTimeoutError",
+        "exception_message": "Request timeout after 3000ms",
+        "log_signal": "Request timeout after 3000ms",
+        "operation": "call_dependency",
+        "file": "clients/http_client.py",
+        "function": "request",
+        "line": 164
+      }
+    },
+    {
+      "incident_id": "synthetic_008",
+      "query": "What caused the CatalogService failure for request REQ-10851?",
+      "ground_truth_root_cause": "API request timeout",
+      "relevant_evidence": [
+        "incident.log:line 4",
+        "incident.stacktrace:exception",
+        "incident.stacktrace:clients/http_client.py:249"
+      ],
+      "metadata": {
+        "service": "CatalogService",
+        "user_id": "USER-5557",
+        "request_id": "REQ-10851",
+        "exception": "RequestTimeoutError",
+        "exception_message": "Request timeout after 3000ms",
+        "log_signal": "Request timeout after 3000ms",
+        "operation": "call_dependency",
+        "file": "clients/http_client.py",
+        "function": "request",
+        "line": 244
+      }
+    },
+    {
+      "incident_id": "synthetic_009",
+      "query": "What caused the InventoryService failure for request REQ-54597?",
+      "ground_truth_root_cause": "API request timeout",
+      "relevant_evidence": [
+        "incident.log:line 4",
+        "incident.stacktrace:exception",
+        "incident.stacktrace:clients/http_client.py:126"
+      ],
+      "metadata": {
+        "service": "InventoryService",
+        "user_id": "USER-7924",
+        "request_id": "REQ-54597",
+        "exception": "RequestTimeoutError",
+        "exception_message": "Request timeout after 3000ms",
+        "log_signal": "Request timeout after 3000ms",
+        "operation": "call_dependency",
+        "file": "clients/http_client.py",
+        "function": "request",
+        "line": 121
+      }
+    },
+    {
+      "incident_id": "synthetic_010",
+      "query": "What caused the InventoryService failure for request REQ-54118?",
+      "ground_truth_root_cause": "API request timeout",
+      "relevant_evidence": [
+        "incident.log:line 4",
+        "incident.stacktrace:exception",
+        "incident.stacktrace:clients/http_client.py:81"
+      ],
+      "metadata": {
+        "service": "InventoryService",
+        "user_id": "USER-4527",
+        "request_id": "REQ-54118",
+        "exception": "RequestTimeoutError",
+        "exception_message": "Request timeout after 3000ms",
+        "log_signal": "Request timeout after 3000ms",
+        "operation": "call_dependency",
+        "file": "clients/http_client.py",
+        "function": "request",
+        "line": 76
+      }
+    },
+    {
+      "incident_id": "synthetic_011",
+      "query": "What caused the AuthService failure for request REQ-22676?",
+      "ground_truth_root_cause": "Authentication failure",
+      "relevant_evidence": [
+        "incident.log:line 4",
+        "incident.stacktrace:exception",
+        "incident.stacktrace:clients/identity_client.py:146"
+      ],
+      "metadata": {
+        "service": "AuthService",
+        "user_id": "USER-7224",
+        "request_id": "REQ-22676",
+        "exception": "AuthenticationError",
+        "exception_message": "Invalid credentials",
+        "log_signal": "Authentication failed: invalid credentials",
+        "operation": "authenticate",
+        "file": "clients/identity_client.py",
+        "function": "request_token",
+        "line": 141
+      }
+    },
+    {
+      "incident_id": "synthetic_012",
+      "query": "What caused the UserService failure for request REQ-15695?",
+      "ground_truth_root_cause": "Authentication failure",
+      "relevant_evidence": [
+        "incident.log:line 4",
+        "incident.stacktrace:exception",
+        "incident.stacktrace:clients/identity_client.py:241"
+      ],
+      "metadata": {
+        "service": "UserService",
+        "user_id": "USER-5333",
+        "request_id": "REQ-15695",
+        "exception": "AuthenticationError",
+        "exception_message": "Invalid credentials",
+        "log_signal": "Authentication failed: invalid credentials",
+        "operation": "authenticate",
+        "file": "clients/identity_client.py",
+        "function": "request_token",
+        "line": 236
+      }
+    },
+    {
+      "incident_id": "synthetic_013",
+      "query": "What caused the GatewayService failure for request REQ-26361?",
+      "ground_truth_root_cause": "Authentication failure",
+      "relevant_evidence": [
+        "incident.log:line 4",
+        "incident.stacktrace:exception",
+        "incident.stacktrace:clients/identity_client.py:151"
+      ],
+      "metadata": {
+        "service": "GatewayService",
+        "user_id": "USER-9785",
+        "request_id": "REQ-26361",
+        "exception": "AuthenticationError",
+        "exception_message": "Invalid credentials",
+        "log_signal": "Authentication failed: invalid credentials",
+        "operation": "authenticate",
+        "file": "clients/identity_client.py",
+        "function": "request_token",
+        "line": 146
+      }
+    },
+    {
+      "incident_id": "synthetic_014",
+      "query": "What caused the AuthService failure for request REQ-92397?",
+      "ground_truth_root_cause": "Authentication failure",
+      "relevant_evidence": [
+        "incident.log:line 4",
+        "incident.stacktrace:exception",
+        "incident.stacktrace:clients/identity_client.py:213"
+      ],
+      "metadata": {
+        "service": "AuthService",
+        "user_id": "USER-5803",
+        "request_id": "REQ-92397",
+        "exception": "AuthenticationError",
+        "exception_message": "Invalid credentials",
+        "log_signal": "Authentication failed: invalid credentials",
+        "operation": "authenticate",
+        "file": "clients/identity_client.py",
+        "function": "request_token",
+        "line": 208
+      }
+    },
+    {
+      "incident_id": "synthetic_015",
+      "query": "What caused the UserService failure for request REQ-19116?",
+      "ground_truth_root_cause": "Authentication failure",
+      "relevant_evidence": [
+        "incident.log:line 4",
+        "incident.stacktrace:exception",
+        "incident.stacktrace:clients/identity_client.py:66"
+      ],
+      "metadata": {
+        "service": "UserService",
+        "user_id": "USER-4150",
+        "request_id": "REQ-19116",
+        "exception": "AuthenticationError",
+        "exception_message": "Invalid credentials",
+        "log_signal": "Authentication failed: invalid credentials",
+        "operation": "authenticate",
+        "file": "clients/identity_client.py",
+        "function": "request_token",
+        "line": 61
+      }
+    },
+    {
+      "incident_id": "synthetic_016",
+      "query": "What caused the AnalyticsService failure for request REQ-20458?",
+      "ground_truth_root_cause": "Memory exhaustion",
+      "relevant_evidence": [
+        "incident.log:line 4",
+        "incident.stacktrace:exception",
+        "incident.stacktrace:FeatureBuilder.java:109"
+      ],
+      "metadata": {
+        "service": "AnalyticsService",
+        "user_id": "USER-5741",
+        "request_id": "REQ-20458",
+        "exception": "java.lang.OutOfMemoryError",
+        "exception_message": "Java heap space",
+        "log_signal": "Java heap space exhausted",
+        "operation": "generate",
+        "file": "FeatureBuilder.java",
+        "function": "buildMatrix",
+        "line": 109
+      }
+    },
+    {
+      "incident_id": "synthetic_017",
+      "query": "What caused the RecommendationService failure for request REQ-46434?",
+      "ground_truth_root_cause": "Memory exhaustion",
+      "relevant_evidence": [
+        "incident.log:line 4",
+        "incident.stacktrace:exception",
+        "incident.stacktrace:FeatureBuilder.java:166"
+      ],
+      "metadata": {
+        "service": "RecommendationService",
+        "user_id": "USER-7227",
+        "request_id": "REQ-46434",
+        "exception": "java.lang.OutOfMemoryError",
+        "exception_message": "Java heap space",
+        "log_signal": "Java heap space exhausted",
+        "operation": "generate",
+        "file": "FeatureBuilder.java",
+        "function": "buildMatrix",
+        "line": 166
+      }
+    },
+    {
+      "incident_id": "synthetic_018",
+      "query": "What caused the ReportingService failure for request REQ-58520?",
+      "ground_truth_root_cause": "Memory exhaustion",
+      "relevant_evidence": [
+        "incident.log:line 4",
+        "incident.stacktrace:exception",
+        "incident.stacktrace:FeatureBuilder.java:140"
+      ],
+      "metadata": {
+        "service": "ReportingService",
+        "user_id": "USER-3664",
+        "request_id": "REQ-58520",
+        "exception": "java.lang.OutOfMemoryError",
+        "exception_message": "Java heap space",
+        "log_signal": "Java heap space exhausted",
+        "operation": "generate",
+        "file": "FeatureBuilder.java",
+        "function": "buildMatrix",
+        "line": 140
+      }
+    },
+    {
+      "incident_id": "synthetic_019",
+      "query": "What caused the AnalyticsService failure for request REQ-99593?",
+      "ground_truth_root_cause": "Memory exhaustion",
+      "relevant_evidence": [
+        "incident.log:line 4",
+        "incident.stacktrace:exception",
+        "incident.stacktrace:FeatureBuilder.java:215"
+      ],
+      "metadata": {
+        "service": "AnalyticsService",
+        "user_id": "USER-5374",
+        "request_id": "REQ-99593",
+        "exception": "java.lang.OutOfMemoryError",
+        "exception_message": "Java heap space",
+        "log_signal": "Java heap space exhausted",
+        "operation": "generate",
+        "file": "FeatureBuilder.java",
+        "function": "buildMatrix",
+        "line": 215
+      }
+    },
+    {
+      "incident_id": "synthetic_020",
+      "query": "What caused the RecommendationService failure for request REQ-80010?",
+      "ground_truth_root_cause": "Memory exhaustion",
+      "relevant_evidence": [
+        "incident.log:line 4",
+        "incident.stacktrace:exception",
+        "incident.stacktrace:FeatureBuilder.java:236"
+      ],
+      "metadata": {
+        "service": "RecommendationService",
+        "user_id": "USER-3803",
+        "request_id": "REQ-80010",
+        "exception": "java.lang.OutOfMemoryError",
+        "exception_message": "Java heap space",
+        "log_signal": "Java heap space exhausted",
+        "operation": "generate",
+        "file": "FeatureBuilder.java",
+        "function": "buildMatrix",
+        "line": 236
+      }
+    },
+    {
+      "incident_id": "synthetic_021",
+      "query": "What caused the ProfileService failure for request REQ-70589?",
+      "ground_truth_root_cause": "Null pointer failure",
+      "relevant_evidence": [
+        "incident.log:line 4",
+        "incident.stacktrace:exception",
+        "incident.stacktrace:ProfileProcessor.java:147"
+      ],
+      "metadata": {
+        "service": "ProfileService",
+        "user_id": "USER-3677",
+        "request_id": "REQ-70589",
+        "exception": "java.lang.NullPointerException",
+        "exception_message": "Cannot invoke method because object is null",
+        "log_signal": "NullPointerException while processing request",
+        "operation": "process_request",
+        "file": "ProfileProcessor.java",
+        "function": "processPreferences",
+        "line": 147
+      }
+    },
+    {
+      "incident_id": "synthetic_022",
+      "query": "What caused the OrderService failure for request REQ-99733?",
+      "ground_truth_root_cause": "Null pointer failure",
+      "relevant_evidence": [
+        "incident.log:line 4",
+        "incident.stacktrace:exception",
+        "incident.stacktrace:ProfileProcessor.java:133"
+      ],
+      "metadata": {
+        "service": "OrderService",
+        "user_id": "USER-4598",
+        "request_id": "REQ-99733",
+        "exception": "java.lang.NullPointerException",
+        "exception_message": "Cannot invoke method because object is null",
+        "log_signal": "NullPointerException while processing request",
+        "operation": "process_request",
+        "file": "ProfileProcessor.java",
+        "function": "processPreferences",
+        "line": 133
+      }
+    },
+    {
+      "incident_id": "synthetic_023",
+      "query": "What caused the UserService failure for request REQ-14207?",
+      "ground_truth_root_cause": "Null pointer failure",
+      "relevant_evidence": [
+        "incident.log:line 4",
+        "incident.stacktrace:exception",
+        "incident.stacktrace:ProfileProcessor.java:130"
+      ],
+      "metadata": {
+        "service": "UserService",
+        "user_id": "USER-4752",
+        "request_id": "REQ-14207",
+        "exception": "java.lang.NullPointerException",
+        "exception_message": "Cannot invoke method because object is null",
+        "log_signal": "NullPointerException while processing request",
+        "operation": "process_request",
+        "file": "ProfileProcessor.java",
+        "function": "processPreferences",
+        "line": 130
+      }
+    },
+    {
+      "incident_id": "synthetic_024",
+      "query": "What caused the CatalogService failure for request REQ-18675?",
+      "ground_truth_root_cause": "Null pointer failure",
+      "relevant_evidence": [
+        "incident.log:line 4",
+        "incident.stacktrace:exception",
+        "incident.stacktrace:ProfileProcessor.java:104"
+      ],
+      "metadata": {
+        "service": "CatalogService",
+        "user_id": "USER-5386",
+        "request_id": "REQ-18675",
+        "exception": "java.lang.NullPointerException",
+        "exception_message": "Cannot invoke method because object is null",
+        "log_signal": "NullPointerException while processing request",
+        "operation": "process_request",
+        "file": "ProfileProcessor.java",
+        "function": "processPreferences",
+        "line": 104
+      }
+    },
+    {
+      "incident_id": "synthetic_025",
+      "query": "What caused the PreferenceService failure for request REQ-37869?",
+      "ground_truth_root_cause": "Null pointer failure",
+      "relevant_evidence": [
+        "incident.log:line 4",
+        "incident.stacktrace:exception",
+        "incident.stacktrace:ProfileProcessor.java:217"
+      ],
+      "metadata": {
+        "service": "PreferenceService",
+        "user_id": "USER-6155",
+        "request_id": "REQ-37869",
+        "exception": "java.lang.NullPointerException",
+        "exception_message": "Cannot invoke method because object is null",
+        "log_signal": "NullPointerException while processing request",
+        "operation": "process_request",
+        "file": "ProfileProcessor.java",
+        "function": "processPreferences",
+        "line": 217
+      }
+    },
+    {
+      "incident_id": "synthetic_026",
+      "query": "What caused the NotificationService failure for request REQ-94259?",
+      "ground_truth_root_cause": "Network connectivity failure",
+      "relevant_evidence": [
+        "incident.log:line 4",
+        "incident.stacktrace:exception",
+        "incident.stacktrace:network/client.py:172"
+      ],
+      "metadata": {
+        "service": "NotificationService",
+        "user_id": "USER-7482",
+        "request_id": "REQ-94259",
+        "exception": "NetworkConnectivityError",
+        "exception_message": "Connection refused",
+        "log_signal": "Connection refused by remote host",
+        "operation": "connect",
+        "file": "network/client.py",
+        "function": "connect",
+        "line": 167
+      }
+    },
+    {
+      "incident_id": "synthetic_027",
+      "query": "What caused the PaymentService failure for request REQ-28301?",
+      "ground_truth_root_cause": "Network connectivity failure",
+      "relevant_evidence": [
+        "incident.log:line 4",
+        "incident.stacktrace:exception",
+        "incident.stacktrace:network/client.py:118"
+      ],
+      "metadata": {
+        "service": "PaymentService",
+        "user_id": "USER-5339",
+        "request_id": "REQ-28301",
+        "exception": "NetworkConnectivityError",
+        "exception_message": "Connection refused",
+        "log_signal": "Connection refused by remote host",
+        "operation": "connect",
+        "file": "network/client.py",
+        "function": "connect",
+        "line": 113
+      }
+    },
+    {
+      "incident_id": "synthetic_028",
+      "query": "What caused the ShippingService failure for request REQ-44438?",
+      "ground_truth_root_cause": "Network connectivity failure",
+      "relevant_evidence": [
+        "incident.log:line 4",
+        "incident.stacktrace:exception",
+        "incident.stacktrace:network/client.py:246"
+      ],
+      "metadata": {
+        "service": "ShippingService",
+        "user_id": "USER-9830",
+        "request_id": "REQ-44438",
+        "exception": "NetworkConnectivityError",
+        "exception_message": "Connection refused",
+        "log_signal": "Connection refused by remote host",
+        "operation": "connect",
+        "file": "network/client.py",
+        "function": "connect",
+        "line": 241
+      }
+    },
+    {
+      "incident_id": "synthetic_029",
+      "query": "What caused the ShippingService failure for request REQ-86484?",
+      "ground_truth_root_cause": "Network connectivity failure",
+      "relevant_evidence": [
+        "incident.log:line 4",
+        "incident.stacktrace:exception",
+        "incident.stacktrace:network/client.py:157"
+      ],
+      "metadata": {
+        "service": "ShippingService",
+        "user_id": "USER-8019",
+        "request_id": "REQ-86484",
+        "exception": "NetworkConnectivityError",
+        "exception_message": "Connection refused",
+        "log_signal": "Connection refused by remote host",
+        "operation": "connect",
+        "file": "network/client.py",
+        "function": "connect",
+        "line": 152
+      }
+    },
+    {
+      "incident_id": "synthetic_030",
+      "query": "What caused the OrderService failure for request REQ-28131?",
+      "ground_truth_root_cause": "Network connectivity failure",
+      "relevant_evidence": [
+        "incident.log:line 4",
+        "incident.stacktrace:exception",
+        "incident.stacktrace:network/client.py:185"
+      ],
+      "metadata": {
+        "service": "OrderService",
+        "user_id": "USER-4593",
+        "request_id": "REQ-28131",
+        "exception": "NetworkConnectivityError",
+        "exception_message": "Connection refused",
+        "log_signal": "Connection refused by remote host",
+        "operation": "connect",
+        "file": "network/client.py",
+        "function": "connect",
+        "line": 180
+      }
+    },
+    {
+      "incident_id": "synthetic_031",
+      "query": "What caused the MediaService failure for request REQ-16175?",
+      "ground_truth_root_cause": "Storage failure",
+      "relevant_evidence": [
+        "incident.log:line 4",
+        "incident.stacktrace:exception",
+        "incident.stacktrace:storage/file_writer.py:83"
+      ],
+      "metadata": {
+        "service": "MediaService",
+        "user_id": "USER-2489",
+        "request_id": "REQ-16175",
+        "exception": "StorageFullError",
+        "exception_message": "No space left on device",
+        "log_signal": "Disk full: no space left",
+        "operation": "write_file",
+        "file": "storage/file_writer.py",
+        "function": "write",
+        "line": 78
+      }
+    },
+    {
+      "incident_id": "synthetic_032",
+      "query": "What caused the UploadService failure for request REQ-99192?",
+      "ground_truth_root_cause": "Storage failure",
+      "relevant_evidence": [
+        "incident.log:line 4",
+        "incident.stacktrace:exception",
+        "incident.stacktrace:storage/file_writer.py:163"
+      ],
+      "metadata": {
+        "service": "UploadService",
+        "user_id": "USER-3621",
+        "request_id": "REQ-99192",
+        "exception": "StorageFullError",
+        "exception_message": "No space left on device",
+        "log_signal": "Disk full: no space left",
+        "operation": "write_file",
+        "file": "storage/file_writer.py",
+        "function": "write",
+        "line": 158
+      }
+    },
+    {
+      "incident_id": "synthetic_033",
+      "query": "What caused the BackupService failure for request REQ-60432?",
+      "ground_truth_root_cause": "Storage failure",
+      "relevant_evidence": [
+        "incident.log:line 4",
+        "incident.stacktrace:exception",
+        "incident.stacktrace:storage/file_writer.py:152"
+      ],
+      "metadata": {
+        "service": "BackupService",
+        "user_id": "USER-2040",
+        "request_id": "REQ-60432",
+        "exception": "StorageFullError",
+        "exception_message": "No space left on device",
+        "log_signal": "Disk full: no space left",
+        "operation": "write_file",
+        "file": "storage/file_writer.py",
+        "function": "write",
+        "line": 147
+      }
+    },
+    {
+      "incident_id": "synthetic_034",
+      "query": "What caused the BackupService failure for request REQ-79352?",
+      "ground_truth_root_cause": "Storage failure",
+      "relevant_evidence": [
+        "incident.log:line 4",
+        "incident.stacktrace:exception",
+        "incident.stacktrace:storage/file_writer.py:119"
+      ],
+      "metadata": {
+        "service": "BackupService",
+        "user_id": "USER-8668",
+        "request_id": "REQ-79352",
+        "exception": "StorageFullError",
+        "exception_message": "No space left on device",
+        "log_signal": "Disk full: no space left",
+        "operation": "write_file",
+        "file": "storage/file_writer.py",
+        "function": "write",
+        "line": 114
+      }
+    },
+    {
+      "incident_id": "synthetic_035",
+      "query": "What caused the BackupService failure for request REQ-99166?",
+      "ground_truth_root_cause": "Storage failure",
+      "relevant_evidence": [
+        "incident.log:line 4",
+        "incident.stacktrace:exception",
+        "incident.stacktrace:storage/file_writer.py:239"
+      ],
+      "metadata": {
+        "service": "BackupService",
+        "user_id": "USER-1188",
+        "request_id": "REQ-99166",
+        "exception": "StorageFullError",
+        "exception_message": "No space left on device",
+        "log_signal": "Disk full: no space left",
+        "operation": "write_file",
+        "file": "storage/file_writer.py",
+        "function": "write",
+        "line": 234
+      }
+    },
+    {
+      "incident_id": "synthetic_036",
+      "query": "What caused the ProductService failure for request REQ-44973?",
+      "ground_truth_root_cause": "Cache failure",
+      "relevant_evidence": [
+        "incident.log:line 4",
+        "incident.stacktrace:exception",
+        "incident.stacktrace:cache/redis_client.py:251"
+      ],
+      "metadata": {
+        "service": "ProductService",
+        "user_id": "USER-9797",
+        "request_id": "REQ-44973",
+        "exception": "CacheConnectionError",
+        "exception_message": "Unable to connect to cache server",
+        "log_signal": "Cache connection failed",
+        "operation": "get_cached_value",
+        "file": "cache/redis_client.py",
+        "function": "get",
+        "line": 246
+      }
+    },
+    {
+      "incident_id": "synthetic_037",
+      "query": "What caused the RecommendationService failure for request REQ-48469?",
+      "ground_truth_root_cause": "Cache failure",
+      "relevant_evidence": [
+        "incident.log:line 4",
+        "incident.stacktrace:exception",
+        "incident.stacktrace:cache/redis_client.py:166"
+      ],
+      "metadata": {
+        "service": "RecommendationService",
+        "user_id": "USER-2827",
+        "request_id": "REQ-48469",
+        "exception": "CacheConnectionError",
+        "exception_message": "Unable to connect to cache server",
+        "log_signal": "Cache connection failed",
+        "operation": "get_cached_value",
+        "file": "cache/redis_client.py",
+        "function": "get",
+        "line": 161
+      }
+    },
+    {
+      "incident_id": "synthetic_038",
+      "query": "What caused the SessionService failure for request REQ-10425?",
+      "ground_truth_root_cause": "Cache failure",
+      "relevant_evidence": [
+        "incident.log:line 4",
+        "incident.stacktrace:exception",
+        "incident.stacktrace:cache/redis_client.py:239"
+      ],
+      "metadata": {
+        "service": "SessionService",
+        "user_id": "USER-8433",
+        "request_id": "REQ-10425",
+        "exception": "CacheConnectionError",
+        "exception_message": "Unable to connect to cache server",
+        "log_signal": "Cache connection failed",
+        "operation": "get_cached_value",
+        "file": "cache/redis_client.py",
+        "function": "get",
+        "line": 234
+      }
+    },
+    {
+      "incident_id": "synthetic_039",
+      "query": "What caused the RecommendationService failure for request REQ-33416?",
+      "ground_truth_root_cause": "Cache failure",
+      "relevant_evidence": [
+        "incident.log:line 4",
+        "incident.stacktrace:exception",
+        "incident.stacktrace:cache/redis_client.py:184"
+      ],
+      "metadata": {
+        "service": "RecommendationService",
+        "user_id": "USER-9201",
+        "request_id": "REQ-33416",
+        "exception": "CacheConnectionError",
+        "exception_message": "Unable to connect to cache server",
+        "log_signal": "Cache connection failed",
+        "operation": "get_cached_value",
+        "file": "cache/redis_client.py",
+        "function": "get",
+        "line": 179
+      }
+    },
+    {
+      "incident_id": "synthetic_040",
+      "query": "What caused the ProductService failure for request REQ-93748?",
+      "ground_truth_root_cause": "Cache failure",
+      "relevant_evidence": [
+        "incident.log:line 4",
+        "incident.stacktrace:exception",
+        "incident.stacktrace:cache/redis_client.py:184"
+      ],
+      "metadata": {
+        "service": "ProductService",
+        "user_id": "USER-5889",
+        "request_id": "REQ-93748",
+        "exception": "CacheConnectionError",
+        "exception_message": "Unable to connect to cache server",
+        "log_signal": "Cache connection failed",
+        "operation": "get_cached_value",
+        "file": "cache/redis_client.py",
+        "function": "get",
+        "line": 179
+      }
+    },
+    {
+      "incident_id": "synthetic_041",
+      "query": "What caused the AnalyticsService failure for request REQ-30032?",
+      "ground_truth_root_cause": "Kafka failure",
+      "relevant_evidence": [
+        "incident.log:line 4",
+        "incident.stacktrace:exception",
+        "incident.stacktrace:messaging/kafka_producer.py:150"
+      ],
+      "metadata": {
+        "service": "AnalyticsService",
+        "user_id": "USER-4258",
+        "request_id": "REQ-30032",
+        "exception": "KafkaProducerError",
+        "exception_message": "Failed to publish message",
+        "log_signal": "Kafka message publish failed",
+        "operation": "publish_event",
+        "file": "messaging/kafka_producer.py",
+        "function": "send",
+        "line": 145
+      }
+    },
+    {
+      "incident_id": "synthetic_042",
+      "query": "What caused the PaymentService failure for request REQ-79514?",
+      "ground_truth_root_cause": "Kafka failure",
+      "relevant_evidence": [
+        "incident.log:line 4",
+        "incident.stacktrace:exception",
+        "incident.stacktrace:messaging/kafka_producer.py:55"
+      ],
+      "metadata": {
+        "service": "PaymentService",
+        "user_id": "USER-9837",
+        "request_id": "REQ-79514",
+        "exception": "KafkaProducerError",
+        "exception_message": "Failed to publish message",
+        "log_signal": "Kafka message publish failed",
+        "operation": "publish_event",
+        "file": "messaging/kafka_producer.py",
+        "function": "send",
+        "line": 50
+      }
+    },
+    {
+      "incident_id": "synthetic_043",
+      "query": "What caused the AnalyticsService failure for request REQ-74042?",
+      "ground_truth_root_cause": "Kafka failure",
+      "relevant_evidence": [
+        "incident.log:line 4",
+        "incident.stacktrace:exception",
+        "incident.stacktrace:messaging/kafka_producer.py:59"
+      ],
+      "metadata": {
+        "service": "AnalyticsService",
+        "user_id": "USER-6310",
+        "request_id": "REQ-74042",
+        "exception": "KafkaProducerError",
+        "exception_message": "Failed to publish message",
+        "log_signal": "Kafka message publish failed",
+        "operation": "publish_event",
+        "file": "messaging/kafka_producer.py",
+        "function": "send",
+        "line": 54
+      }
+    },
+    {
+      "incident_id": "synthetic_044",
+      "query": "What caused the OrderService failure for request REQ-50306?",
+      "ground_truth_root_cause": "Kafka failure",
+      "relevant_evidence": [
+        "incident.log:line 4",
+        "incident.stacktrace:exception",
+        "incident.stacktrace:messaging/kafka_producer.py:116"
+      ],
+      "metadata": {
+        "service": "OrderService",
+        "user_id": "USER-6947",
+        "request_id": "REQ-50306",
+        "exception": "KafkaProducerError",
+        "exception_message": "Failed to publish message",
+        "log_signal": "Kafka message publish failed",
+        "operation": "publish_event",
+        "file": "messaging/kafka_producer.py",
+        "function": "send",
+        "line": 111
+      }
+    },
+    {
+      "incident_id": "synthetic_045",
+      "query": "What caused the OrderService failure for request REQ-84364?",
+      "ground_truth_root_cause": "Kafka failure",
+      "relevant_evidence": [
+        "incident.log:line 4",
+        "incident.stacktrace:exception",
+        "incident.stacktrace:messaging/kafka_producer.py:75"
+      ],
+      "metadata": {
+        "service": "OrderService",
+        "user_id": "USER-4946",
+        "request_id": "REQ-84364",
+        "exception": "KafkaProducerError",
+        "exception_message": "Failed to publish message",
+        "log_signal": "Kafka message publish failed",
+        "operation": "publish_event",
+        "file": "messaging/kafka_producer.py",
+        "function": "send",
+        "line": 70
+      }
+    },
+    {
+      "incident_id": "synthetic_046",
+      "query": "What caused the PaymentService failure for request REQ-19071?",
+      "ground_truth_root_cause": "Configuration failure",
+      "relevant_evidence": [
+        "incident.log:line 4",
+        "incident.stacktrace:exception",
+        "incident.stacktrace:config/application_config.py:249"
+      ],
+      "metadata": {
+        "service": "PaymentService",
+        "user_id": "USER-8962",
+        "request_id": "REQ-19071",
+        "exception": "ConfigurationError",
+        "exception_message": "Required configuration value is missing",
+        "log_signal": "Missing required configuration",
+        "operation": "initialize",
+        "file": "config/application_config.py",
+        "function": "load",
+        "line": 244
+      }
+    },
+    {
+      "incident_id": "synthetic_047",
+      "query": "What caused the NotificationService failure for request REQ-26828?",
+      "ground_truth_root_cause": "Configuration failure",
+      "relevant_evidence": [
+        "incident.log:line 4",
+        "incident.stacktrace:exception",
+        "incident.stacktrace:config/application_config.py:223"
+      ],
+      "metadata": {
+        "service": "NotificationService",
+        "user_id": "USER-3060",
+        "request_id": "REQ-26828",
+        "exception": "ConfigurationError",
+        "exception_message": "Required configuration value is missing",
+        "log_signal": "Missing required configuration",
+        "operation": "initialize",
+        "file": "config/application_config.py",
+        "function": "load",
+        "line": 218
+      }
+    },
+    {
+      "incident_id": "synthetic_048",
+      "query": "What caused the GatewayService failure for request REQ-44741?",
+      "ground_truth_root_cause": "Configuration failure",
+      "relevant_evidence": [
+        "incident.log:line 4",
+        "incident.stacktrace:exception",
+        "incident.stacktrace:config/application_config.py:190"
+      ],
+      "metadata": {
+        "service": "GatewayService",
+        "user_id": "USER-3705",
+        "request_id": "REQ-44741",
+        "exception": "ConfigurationError",
+        "exception_message": "Required configuration value is missing",
+        "log_signal": "Missing required configuration",
+        "operation": "initialize",
+        "file": "config/application_config.py",
+        "function": "load",
+        "line": 185
+      }
+    },
+    {
+      "incident_id": "synthetic_049",
+      "query": "What caused the NotificationService failure for request REQ-37760?",
+      "ground_truth_root_cause": "Configuration failure",
+      "relevant_evidence": [
+        "incident.log:line 4",
+        "incident.stacktrace:exception",
+        "incident.stacktrace:config/application_config.py:193"
+      ],
+      "metadata": {
+        "service": "NotificationService",
+        "user_id": "USER-7932",
+        "request_id": "REQ-37760",
+        "exception": "ConfigurationError",
+        "exception_message": "Required configuration value is missing",
+        "log_signal": "Missing required configuration",
+        "operation": "initialize",
+        "file": "config/application_config.py",
+        "function": "load",
+        "line": 188
+      }
+    },
+    {
+      "incident_id": "synthetic_050",
+      "query": "What caused the OrderService failure for request REQ-62296?",
+      "ground_truth_root_cause": "Configuration failure",
+      "relevant_evidence": [
+        "incident.log:line 4",
+        "incident.stacktrace:exception",
+        "incident.stacktrace:config/application_config.py:226"
+      ],
+      "metadata": {
+        "service": "OrderService",
+        "user_id": "USER-6107",
+        "request_id": "REQ-62296",
+        "exception": "ConfigurationError",
+        "exception_message": "Required configuration value is missing",
+        "log_signal": "Missing required configuration",
+        "operation": "initialize",
+        "file": "config/application_config.py",
+        "function": "load",
+        "line": 221
+      }
+    }
+  ]
+}

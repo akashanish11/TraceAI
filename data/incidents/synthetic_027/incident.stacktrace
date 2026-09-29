@@ -1,0 +1,11 @@
+Traceback (most recent call last):
+  File "services/paymentservice.py", line 113, in connect
+    result = dependency_client.execute()
+  File "network/client.py", line 118, in connect
+    raise NetworkConnectivityError("Connection refused")
+NetworkConnectivityError: Connection refused
+
+Service: PaymentService
+Operation: connect
+User ID: USER-5339
+Request ID: REQ-28301

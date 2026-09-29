@@ -1,0 +1,8 @@
+java.lang.NullPointerException: Cannot invoke "String.length()" because "preference" is null
+    at com.example.user.ProfileProcessor.processPreferences(ProfileProcessor.java:87)
+    at com.example.user.UserService.getProfile(UserService.java:142)
+    at com.example.user.ApiController.getProfile(ApiController.java:55)
+
+Service: UserService
+Operation: getProfile
+User ID: USER-9127

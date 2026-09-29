@@ -1,0 +1,11 @@
+Traceback (most recent call last):
+  File "services/shippingservice.py", line 241, in connect
+    result = dependency_client.execute()
+  File "network/client.py", line 246, in connect
+    raise NetworkConnectivityError("Connection refused")
+NetworkConnectivityError: Connection refused
+
+Service: ShippingService
+Operation: connect
+User ID: USER-9830
+Request ID: REQ-44438

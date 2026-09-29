@@ -1,0 +1,11 @@
+Traceback (most recent call last):
+  File "services/productservice.py", line 246, in get
+    result = dependency_client.execute()
+  File "cache/redis_client.py", line 251, in get
+    raise CacheConnectionError("Unable to connect to cache server")
+CacheConnectionError: Unable to connect to cache server
+
+Service: ProductService
+Operation: get_cached_value
+User ID: USER-9797
+Request ID: REQ-44973
