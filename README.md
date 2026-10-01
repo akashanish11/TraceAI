@@ -287,7 +287,7 @@ TraceAI/
 ## 1. Clone
 
 ```bash
-git clone <YOUR_REPOSITORY_URL>
+git clone https://github.com/akashanish11/TraceAI.git
 cd TraceAI
 ```
 
