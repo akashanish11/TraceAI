@@ -1,4 +1,4 @@
-# TraceAI
+﻿# TraceAI
 
 ## Evidence-Grounded GenAI System for Software Incident Investigation and Root Cause Analysis
 
@@ -33,54 +33,54 @@ TraceAI addresses this by separating the investigation into retrieval, determini
 
 ```text
 Incident Data
-     │
-     ▼
+     â”‚
+     â–¼
 Multi-Source Loading
-     │
-     ▼
+     â”‚
+     â–¼
 Evidence Normalization
-     │
-     ▼
+     â”‚
+     â–¼
 Sentence-Transformer Embeddings
-     │
-     ▼
+     â”‚
+     â–¼
 FAISS Retrieval
-     │
-     ▼
+     â”‚
+     â–¼
 Evidence-Aware Ranking
-     │
-     ├──────────────► Diagnostic Signals
-     │
-     ├──────────────► Root-Cause Analysis
-     │
-     └──────────────► Historical Incident Matching
-                              │
-                              ▼
+     â”‚
+     â”œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â–º Diagnostic Signals
+     â”‚
+     â”œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â–º Root-Cause Analysis
+     â”‚
+     â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â–º Historical Incident Matching
+                              â”‚
+                              â–¼
                        RAG Context Builder
-                              │
-                              ▼
+                              â”‚
+                              â–¼
                     Local Qwen2.5 1.5B
                          via Ollama
-                              │
-                              ▼
+                              â”‚
+                              â–¼
                        AI Investigation
-                              │
-                              ▼
+                              â”‚
+                              â–¼
                      Citation Repair
-                              │
-                              ▼
+                              â”‚
+                              â–¼
                    Citation Verification
-                              │
-                              ▼
+                              â”‚
+                              â–¼
                     Claim Verification
-                              │
-                              ▼
+                              â”‚
+                              â–¼
                        Groundedness
-                              │
-                              ▼
+                              â”‚
+                              â–¼
                     Evidence Confidence
-                              │
-                              ▼
+                              â”‚
+                              â–¼
                        SQLite History
 ```
 
@@ -116,6 +116,19 @@ Completed investigations are persisted in SQLite with investigation ID, incident
 
 ---
 
+## Demo
+
+### Investigation Workspace
+![TraceAI Investigation Workspace](screenshots/Workspace.png)
+
+### Root Cause & AI Investigation
+![TraceAI Root Cause and AI Investigation](screenshots/Root%20Cause%20%2B%20AI%20Investigation.png)
+
+### Evidence
+![TraceAI Evidence](screenshots/Evidence.png)
+
+### Verification
+![TraceAI Verification](screenshots/Verification.png)
 # Example Investigation
 
 For the payment-service incident, TraceAI identifies:
@@ -147,9 +160,9 @@ Evidence chain:
 
 ```text
 Connection pool exhausted
-        ↓
+        â†“
 Unable to acquire database connection
-        ↓
+        â†“
 Payment transaction failed
 ```
 
@@ -257,27 +270,27 @@ Example investigation request:
 
 ```text
 TraceAI/
-├── api/
-│   ├── __init__.py
-│   └── main.py
-├── app/
-│   ├── analysis/
-│   ├── parsers/
-│   ├── retrieval/
-│   ├── rag/
-│   └── services/
-├── data/
-│   ├── incidents/
-│   └── evaluation/
-├── tests/
-├── main.py
-├── Dockerfile
-├── docker-compose.yml
-├── requirements.txt
-├── requirements-docker.txt
-├── pytest.ini
-├── .dockerignore
-└── README.md
+â”œâ”€â”€ api/
+â”‚   â”œâ”€â”€ __init__.py
+â”‚   â””â”€â”€ main.py
+â”œâ”€â”€ app/
+â”‚   â”œâ”€â”€ analysis/
+â”‚   â”œâ”€â”€ parsers/
+â”‚   â”œâ”€â”€ retrieval/
+â”‚   â”œâ”€â”€ rag/
+â”‚   â””â”€â”€ services/
+â”œâ”€â”€ data/
+â”‚   â”œâ”€â”€ incidents/
+â”‚   â””â”€â”€ evaluation/
+â”œâ”€â”€ tests/
+â”œâ”€â”€ main.py
+â”œâ”€â”€ Dockerfile
+â”œâ”€â”€ docker-compose.yml
+â”œâ”€â”€ requirements.txt
+â”œâ”€â”€ requirements-docker.txt
+â”œâ”€â”€ pytest.ini
+â”œâ”€â”€ .dockerignore
+â””â”€â”€ README.md
 ```
 
 ---
