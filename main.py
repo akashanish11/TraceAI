@@ -1030,7 +1030,7 @@ else:
             with evidence_col1:
 
                 st.markdown(
-                    f"**{index}. {item['text']}**"
+                    f"**{index}.** {item['text']}"
                 )
 
                 st.markdown(
